@@ -1,0 +1,23 @@
+Package: PakPC2017GUI
+Type: Package
+Title: GUI for Pakistan Population Census 2017
+Version: 0.1.0
+Authors@R: c(
+              person(c("Muhammad", "Yaseen"),  email = "myaseen208@gmail.com", role = c("aut", "cre"))
+            , person(c("Muhammad", "Arfan", "Dilber"),  email = "pbsfsd041@gmail.com", role = "ctb")
+            )
+Maintainer: Muhammad Yaseen <myaseen208@gmail.com>
+Description: Graphical User Interface for exploration of Pakistan Population Census 2017 (<http://www.pbscensus.gov.pk/>).
+Depends: R (>= 3.1)
+Imports: 
+  shiny,
+  PakPC2017,
+  ggplot2,
+  scales, 
+  dplyr,
+  magrittr,
+  reshape2
+License: GPL-3
+URL: https://github.com/MYaseen208/PakPC2017GUI
+LazyData: TRUE
+RoxygenNote: 6.0.1
