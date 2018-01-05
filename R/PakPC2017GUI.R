@@ -2,8 +2,16 @@
 #' @aliases PakPC2017GUI
 #' @title  GUI for Pakistan Population Census 2017
 #' @description GUI for Pakistan Population Census 2017.
-#' @param \code{dataset} A dataset (optional).
 #' @return A GUI for visualizing data from \code{dataset}.
+#' @author  \enumerate{
+#'  \item Muhammad Yaseen (\email{myaseen208@@gmail.com})
+#'  \item Muhammad Arfan Dilber (\email{pbsfsd041@gmail.com})
+#'  }
+#'
+#' @references \enumerate{
+#' \item Pakistan Population Census 2017 (\url{http://www.pbscensus.gov.pk/}).
+#'  }
+#'
 #' @import shiny
 #' @import PakPC2017
 #' @import ggplot2
@@ -11,8 +19,28 @@
 #' @import dplyr
 #' @import magrittr
 #' @import reshape2
+#' @importFrom utils head
+#' @examples
+#' # PakPC2017GUI()
 #' @export
-PakPC2017GUI <- function( dataset = NA ) {
+
+if(getRversion() >= "2.15.1"){
+  utils::globalVariables(
+    c(
+        "Census"
+      , "City"
+      , "District"
+      , "Division"
+      , "Pop1998"
+      , "Pop2017"
+      , "Population"
+      , "Province"
+      , "Tehsil"
+    )
+  )
+}
+
+PakPC2017GUI <- function() {
 
     PakPC2017Tehsil <- PakPC2017::PakPC2017Tehsil
     PakPC2017City10 <- PakPC2017::PakPC2017City10

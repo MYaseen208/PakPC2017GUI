@@ -3,15 +3,23 @@
 \name{PakPC2017GUI}
 \alias{PakPC2017GUI}
 \title{GUI for Pakistan Population Census 2017}
-\usage{
-PakPC2017GUI(dataset = NA)
-}
-\arguments{
-\item{\code{dataset}}{A dataset (optional).}
-}
 \value{
 A GUI for visualizing data from \code{dataset}.
 }
 \description{
 GUI for Pakistan Population Census 2017.
+}
+\examples{
+# PakPC2017GUI()
+}
+\references{
+\enumerate{
+\item Pakistan Population Census 2017 (\url{http://www.pbscensus.gov.pk/}).
+ }
+}
+\author{
+\enumerate{
+ \item Muhammad Yaseen (\email{myaseen208@gmail.com})
+ \item Muhammad Arfan Dilber (\email{pbsfsd041@gmail.com})
+ }
 }
