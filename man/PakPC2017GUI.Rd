@@ -10,7 +10,11 @@ A GUI for visualizing data from \code{dataset}.
 GUI for Pakistan Population Census 2017.
 }
 \examples{
-# PakPC2017GUI()
+
+if(interactive()){
+PakPC2017GUI()
+}
+
 }
 \references{
 \enumerate{
